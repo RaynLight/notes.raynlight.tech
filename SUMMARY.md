@@ -15,3 +15,7 @@
 * [Interactive blocks](basics/interactive-blocks.md)
 * [OpenAPI](basics/openapi.md)
 * [Integrations](basics/integrations.md)
+
+## Windows Privilege Escalation
+
+* [Powershell History](windows-privilege-escalation/powershell-history.md)
