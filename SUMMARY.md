@@ -11,12 +11,12 @@
 
 * [Powershell History](windows-privilege-escalation/powershell-history.md)
 
-## C2
-
-* [Sliver Setup](c2/sliver-setup.md)
-
 ## Active Directory
 
 * [Constrained Delegation](active-directory/constrained-delegation.md)
 * [Unconstrained Delegation](active-directory/unconstrained-delegation.md)
-* [Page 1](active-directory/page-1.md)
+* [Object Security](active-directory/object-security.md)
+
+## C2
+
+* [Sliver Setup](c2/sliver-setup.md)
