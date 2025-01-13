@@ -1,6 +1,11 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Index](README.md)
+
+## Common Ports
+
+* [SSH - (22)](common-ports/ssh-22.md)
+* [FTP - (23)](common-ports/ftp-23.md)
 
 ## Windows Privilege Escalation
 
