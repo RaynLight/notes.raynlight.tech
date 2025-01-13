@@ -17,6 +17,8 @@
 * [Unconstrained Delegation](active-directory/unconstrained-delegation.md)
 * [Object Security](active-directory/object-security.md)
 
-## C2
+## Sliver-c2
 
-* [Sliver Setup](c2/sliver-setup.md)
+* [Sliver Setup](sliver-c2/sliver-setup.md)
+* [Sliver payload generation](sliver-c2/sliver-payload-generation.md)
+* [Armory](sliver-c2/armory.md)

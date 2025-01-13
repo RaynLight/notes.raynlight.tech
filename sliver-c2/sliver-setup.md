@@ -20,7 +20,8 @@ config.Bypass = 3      // Change the 3 to a 1
 3. Make the file
 
 ```bash
-sudo apt install golang-go -y # Installing dependencies
+sudo apt install golang-go -y     # Installing dependencies
+sudo apt install git mingw-w64 -y # Installing dependencies
 cd ~/sliver
 make
 ```
