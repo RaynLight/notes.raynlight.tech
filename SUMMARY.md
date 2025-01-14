@@ -22,3 +22,4 @@
 * [Sliver Setup](sliver-c2/sliver-setup.md)
 * [Sliver payload generation](sliver-c2/sliver-payload-generation.md)
 * [Armory](sliver-c2/armory.md)
+* [Privilege Escalation](sliver-c2/privilege-escalation.md)

